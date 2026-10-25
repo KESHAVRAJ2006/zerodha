@@ -23,7 +23,7 @@ function Universe() {
         </p>
 
         {partners.map((partner) => (
-          <div className="col-4 p-3 mt-5" key={partner.text}>
+          <div className="col-6 col-md-4 p-3 mt-5" key={partner.text}>
             <img
               src={partner.logo}
               alt={partner.text}
@@ -34,8 +34,8 @@ function Universe() {
         ))}
 
         <button
-          className="p-2 btn btn-primary fs-5 mb-5 mt-5"
-          style={{ width: "20%", margin: "0 auto" }}
+          className="p-2 btn btn-primary fs-5 mb-5 mt-5 cta-btn"
+          style={{ margin: "0 auto" }}
           onClick={() => navigate("/signup")}
         >
           Signup Now

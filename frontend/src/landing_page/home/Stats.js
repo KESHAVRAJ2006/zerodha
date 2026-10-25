@@ -5,7 +5,7 @@ function Stats() {
   return (
     <div className="container p-3">
       <div className="row p-5">
-        <div className="col-6 p-5">
+        <div className="col-12 col-md-6 p-5">
           <h1 className="fs-2 mb-5">Trust with confidence</h1>
           <h2 className="fs-4">Customer-first always</h2>
           <p className="text-muted">
@@ -29,7 +29,7 @@ function Stats() {
             money.
           </p>
         </div>
-        <div className="col-6 p-5">
+        <div className="col-12 col-md-6 p-5">
           <img src="/media/ecosystem.png" alt="Zerodha ecosystem" style={{ width: "90%" }} />
           <div className="text-center">
             <Link to="/product" className="mx-5" style={{ textDecoration: "none" }}>

@@ -841,3 +841,103 @@ hr {
 .action:hover {
   background-color: rgb(212, 212, 212);
 }
+/* ---------- phones ---------- */
+@media (max-width: 767.98px) {
+  .topbar-container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .indices-container {
+    width: 100%;
+    flex-basis: auto;
+    border-right: none;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding: 6px 12px;
+  }
+
+  .menu-container {
+    width: 100%;
+    flex-basis: auto;
+    padding: 6px 12px;
+    gap: 10px;
+  }
+
+  .menus {
+    flex: 1;
+    min-width: 0;
+    justify-content: space-between;
+  }
+
+  /* menu items scroll sideways instead of stretching the page */
+  .menus ul {
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .menus li {
+    margin-right: 18px;
+  }
+
+  .menus hr,
+  .profile .username {
+    display: none;
+  }
+
+  /* content first, watchlist below it */
+  .dashboard-container {
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .watchlist-container,
+  .content {
+    flex-basis: auto;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .content {
+    padding: 16px 12px;
+  }
+
+  .order-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .order-table table {
+    min-width: 560px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .col,
+  .data {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .orders {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  #buy-window {
+    position: fixed;
+    width: 94%;
+    left: 3%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
